@@ -1,0 +1,11 @@
+.num {
+    color: blue;
+    font-size: 200px;
+    text-align: center;
+}
+
+.num2 {
+    color: red;
+    font-size: 100px;
+    background-color: black;
+}

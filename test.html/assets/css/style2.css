@@ -1,0 +1,23 @@
+.num1 {
+    color: blue;
+    font-size: 150px;
+    text-align: center;
+}
+
+.name {
+    color: orange;
+    font-size: 50;
+    text-align: center;
+}
+.num2 {
+    color: green;
+    font-size: 50;
+    text-align: center;
+}
+
+.wombat {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    
+}
