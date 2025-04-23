@@ -1,0 +1,25 @@
+.hani1 {
+    height: 400px;
+    width: 400px;
+    position: relative;
+    left: 280px;
+}
+
+.hani2 {
+    text-align: center;
+}
+
+.singer {
+    color: blue;
+    text-align: center;
+}
+
+.explain {
+    color: coral;
+    font-size: 50;
+    text-align: center;
+}
+
+.video  {
+    text-align: center;
+}
