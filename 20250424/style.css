@@ -1,0 +1,18 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-start;
+    height:100px;
+    padding:20px;
+    box-sizing:border-box;
+}
+
+.box {
+    width:100px;
+    height:100px;
+    background-color:blue;
+    color:yellow;
+    text-align:center;
+    line-height:100px;
+    border-radius:8px;
+}
