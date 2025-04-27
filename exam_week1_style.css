@@ -31,16 +31,22 @@ main {
     justify-content: flex-start;
 }
 
+img {
+    display: block;
+    overflow: auto;
+}
+
 aside {
     position: sticky;
     display: inline-block;
-    background-color: black;
-    color: white;
+    background-color: yellow;
+    color: black;
     width: 250px; 
 }
 
 article {
-    left: 250px;
+    position: relative;
+    left: 10px;
     background-color: black;
     color: white;
 }
@@ -62,6 +68,7 @@ footer {
     nav {
         display: block;
         width: 600px;
+        overflow: auto;
     }
     main {
         flex-direction: column;
