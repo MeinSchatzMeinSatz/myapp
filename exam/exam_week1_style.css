@@ -65,12 +65,13 @@ footer {
         flex-direction: column;
     }
 
+    main {
+        flex-direction: column;
+    }
+
     nav {
         display: block;
         width: 600px;
         overflow: auto;
-    }
-    main {
-        flex-direction: column;
     }
 }
