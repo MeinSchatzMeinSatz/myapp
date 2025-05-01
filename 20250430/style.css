@@ -1,0 +1,39 @@
+:root {
+    --font-style: Arial;
+    --bg-color: rgb(246, 194, 97);
+    --text-color: rgb(66, 66, 242);
+    --button-bg: skyblue;
+    --button-text: black;
+}
+
+[data-theme="dark"] {
+    --bg-color: rgb(1, 1, 1);
+    --text-color: white;
+    --button-bg: blue;
+    --button-text: white;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-style: var(--font-style);
+    color: var(--text-color);
+    background-color: var(--bg-color);
+}
+
+div {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    color: var(--button-text);
+    background-color: var(--button-bg);
+}
+
+button:hover {
+    background-color: gold;
+    transition: all 0.5s ease-out;
+    box-shadow: 4px 4px 8px rgb(0, 0, 0, 1);
+}
