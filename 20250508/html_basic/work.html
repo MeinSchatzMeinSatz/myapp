@@ -1,0 +1,35 @@
+<div id="container" style="width:300px; height:300px; background-color:gray;">
+    Hover here to show the box
+    <div id="hoverbox" style="width:200px; height:200px; background-color:lightblue; position:absolute; display:none;">
+      <p>Hover over me!</p>
+    </div>
+    <button id="colorBtn">색상 바꾸기</button>
+  <div id="box" style="width:100px; height:100px; background-color:skyblue; margin-top:10px;"></div>
+  
+  <script>
+    const container = document.getElementById('container');
+    const box = document.getElementById('hoverbox');
+  
+    container.addEventListener('mouseover', function() {
+      box.style.display = 'block';
+    });
+  
+    container.addEventListener('mouseout', function() {
+      box.style.display = 'none';
+    });
+  
+    box.addEventListener('mouseover', function() {
+      box.style.backgroundColor = 'lightgreen';
+    });
+  
+    box.addEventListener('mouseout', function() {
+      box.style.backgroundColor = 'lightblue';
+    });
+  
+    const btn = document.getElementById('colorBtn');
+  
+    btn.addEventListener("click", function () {
+      btn.style.backgroundColor = "red";
+    });
+  </script>
+  No file chosen
