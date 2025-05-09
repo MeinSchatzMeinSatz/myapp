@@ -1,0 +1,24 @@
+/* 기본우선순위 실습 */
+
+h1 {color: blue;;}
+.main {color: green;}
+#title {color: red;}
+
+h2 {color: red;}
+h2 {color: blue;}
+
+/* 실습 */
+p { color: blue;}
+.text { color: green;}
+#para { color: violet;}
+p::first-letter {
+    font-size: 100px;
+}
+
+
+/* 
+결론 
+
+선택자 우선순위
+아이디 > 속성 + 클래스 > 태그 (하지만 !important가 적용되면 이게 제일 쎔)
+*/
