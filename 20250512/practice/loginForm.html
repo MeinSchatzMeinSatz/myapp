@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form 실습</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="loginForm">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" required placeholder="input e-mail">
+
+        <label for="password">Password</label>
+        <input type="password" id="password" required minlength="6" placeholder="min-length is 6">
+
+        <button type="submint">Login</button>
+    </form>
+    <p id="err-msg" style="color: red"></p>
+
+    <script>
+        const form = document.getElementById("loginForm");
+        const email = document.getElementById("email");
+        const password = document.getElementById("password");
+        const errorMsg = document.getElementById("error-msg");
+
+        form.addEventListener("submit", function (e) {
+            errorMsg.textContent = "";
+
+            if (!email.value.includes('@')) {
+                e.preventDefault();
+                errorMsg.textContent = "유효한 이메일 주소를 입력해주세요";
+                return;
+            }
+
+            if (password.value.length < 6) {
+                e.preventDefault();
+                errorMsg.textContent = "비밀번호는 6자 이상이어야 합니다.";
+                return;
+            }
+        });
+    </script>
+</body>
+</html>
