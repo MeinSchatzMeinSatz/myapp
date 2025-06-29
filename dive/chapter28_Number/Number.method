@@ -1,0 +1,15 @@
+Number 메서드
+
+-Number.isFinite
+-Number.isInteger
+-Number.isNaN
+-Number.isSafeInteger
+
+-Number.prototype.toFixed
+ : 숫자를 반올림하여 문자열로 반환한다.
+
+-Number.prototype.toPrecision
+ : 요건 뭐지?
+
+-Number.prototype.toString
+ : 숫자를 문자열로 반환한다.
